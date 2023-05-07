@@ -36,7 +36,7 @@ public class GettingStartedApplication {
             final var resultSet = statement.executeQuery("SELECT tick, random_string FROM table_timestamp_and_random_string");
             final var output = new ArrayList<>();
             while (resultSet.next()) {
-                output.add("Read from DB: " + resultSet.getTimestamp("tick") + ", Random String: " + resultSet.getString("random_string"));
+                output.add("Read from Databases christian here: " + resultSet.getTimestamp("tick"));
             }
 
             model.put("records", output);
